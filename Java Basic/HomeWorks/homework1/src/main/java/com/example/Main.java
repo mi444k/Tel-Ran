@@ -1,4 +1,4 @@
-package org.example;
+package com.example;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class Main {
         int v_base = 365;
         int hundreds = v_base / 100;
         int tens = v_base % 100 / 10;
-        int units = v_base % 100 % 10;
+        int units = v_base % 10;
 
         System.out.printf("\nchar: %s", v_char);
         System.out.printf("\nbyte: %s", v_byte);
@@ -22,6 +22,7 @@ public class Main {
         System.out.printf("\nlong: %s", v_long);
 
         System.out.printf("\n" +
+                "\nBase value: " + v_base +
                 "\nHundreds: " + hundreds +
                 "\nTens: " + tens +
                 "\nUnits: " + units
