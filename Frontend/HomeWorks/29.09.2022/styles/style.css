@@ -1,0 +1,36 @@
+:root {
+  --header-height: 50px;
+  --footer-height: 50px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eef2e6;
+}
+
+.header,
+.footer {
+  position: inherit;
+  display: grid;
+  width: 100vw;
+  background-color: #1c6758;
+  color: #eef2e6;
+}
+
+.header {
+  top: 0px;
+  height: var(--header-height);
+}
+
+.main {
+  margin: 0 20px 0 20px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  height: var(--footer-height);
+}

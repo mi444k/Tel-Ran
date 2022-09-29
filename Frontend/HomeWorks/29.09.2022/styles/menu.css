@@ -1,0 +1,29 @@
+.menu {
+  border-bottom: 5px solid #d6cda4;
+  height: var(--header-height);
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu ul li {
+  float: left;
+  width: calc(100vw / 6);
+}
+
+.menu ul li a {
+  text-align: center;
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #eef2e6;
+}
+
+.menu ul li a:hover {
+  text-align: center;
+  border-radius: 15px 15px 0 0;
+  background-color: #d6cda4;
+  color: #3d8361;
+}
