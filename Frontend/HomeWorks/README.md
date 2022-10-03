@@ -7,4 +7,6 @@
 
 ---
 
-<code>All homework is done without the help of other living people ;)</code>
+#### Self tasks
+
+- [Text video background](https://mi444k.github.io/Tel-Ran/Frontend/HomeWorks/SelfTask1/index.html)
