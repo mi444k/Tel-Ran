@@ -2,6 +2,20 @@ package com.example;
 
 public class Main {
     public static void main(String[] args) {
+    }
+
+    static void example_extra1_builder() {
+        System.out.println(new CarBuilder().buildCar());
+
+        Car mycar = new CarBuilder()
+                    .color("black")
+                    .owner("Martis")
+                    .power(150)
+                    .buildCar();
+        System.out.println(mycar);
+    }
+
+    static void example_hw_20220921() {
         char v_char = 'G';
         byte v_byte = 4;
         short v_short = 56;
@@ -27,5 +41,10 @@ public class Main {
                 "\nTens: " + tens +
                 "\nUnits: " + units
         );
+    }
+    
+    static void example_hw_20221005() {
+        Cat cat = new Cat(11, "Bob", "Morley");
+        System.out.println(cat);
     }
 }
