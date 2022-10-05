@@ -1,0 +1,24 @@
+localhost:~# mkdir -p /home/user/start
+localhost:~# echo "Start" > /home/user/start/1.txt
+localhost:~# date >> /home/user/start/1.txt
+localhost:~# mkdir /opt/task
+localhost:~# cp /home/user/start/1.txt /opt/task/start.txt
+localhost:~# ls -1Ar / | tail -n4 >> /opt/task/start.txt
+localhost:~# cat /opt/task/start.txt
+Start
+Wed Oct  5 09:14:34 UTC 2022
+bin
+.preload2
+.fscmd
+.ash_history
+localhost:~#
+localhost:~#
+localhost:~#
+localhost:~# > ~/chmodFile
+localhost:~# date >> ~/chmodFile
+localhost:~# chmod u=rwx,g=r,o-rwx ~/chmodFile
+localhost:~# ls -lA ~/ | grep chmodFile
+-rwxr-----    1 root     root            29 Oct  5 10:12 chmodFile
+localhost:~# cat ~/chmodFile
+Wed Oct  5 10:12:59 UTC 2022
+localhost:~#
