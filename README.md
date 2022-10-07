@@ -16,8 +16,8 @@
 
 #### HomeWorks
 
-- [Basic Linux / GIT](https://github.com/mi444k/Tel-Ran/tree/main/Linux/HomeWorks)
-- [Basic Frontend](https://github.com/mi444k/Tel-Ran/tree/main/Frontend/HomeWorks)
-- [Basic Backend](https://github.com/mi444k/Tel-Ran/tree/main/Java%20Basic/HomeWorks)
+- [Basic Linux / GIT](https://github.com/mi444k/Tel-Ran/tree/main/Linux/Basic/HomeWorks)
+- [Basic Frontend](https://github.com/mi444k/Tel-Ran/tree/main/Frontend/Basic/HomeWorks)
+- [Basic Backend](https://github.com/mi444k/Tel-Ran/tree/main/Java/Basic/HomeWorks)
 
 ---
