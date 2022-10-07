@@ -3,6 +3,7 @@
 ---
 
 1. **Generate SSH keys:**
+
    `ssh-keygen -t rsa -f /Users/Shared/.ssh/id_rsa`
 
 2. **Upload SSH Key to server:**

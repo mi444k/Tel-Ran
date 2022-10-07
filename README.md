@@ -21,3 +21,9 @@
 - [Basic Backend](https://github.com/mi444k/Tel-Ran/tree/main/Java/)
 
 ---
+
+#### Cheat sheet
+
+- [Linux / GIT](https://github.com/mi444k/Tel-Ran/tree/main/Linux/cheatsheet.md)
+
+---
