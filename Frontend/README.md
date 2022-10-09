@@ -14,4 +14,4 @@
 
 #### Self
 
-- [Text video background](https://mi444k.github.io/Tel-Ran/Frontend/SelfTask/TextVideoBackground/index.html)
+- [Text video background](https://mi444k.github.io/Tel-Ran/Frontend/SelfTasks/TextVideoBackground/)

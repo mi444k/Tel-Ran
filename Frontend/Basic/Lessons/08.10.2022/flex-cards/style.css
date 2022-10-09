@@ -1,0 +1,33 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: stretch;
+    justify-content: space-evenly;
+    justify-content: space-around;
+}
+
+article {
+    width: 450px;
+    margin: 10px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+article img {
+    width: 100%;
+}
+
+.text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0 20px;
+}
+
+button {
+    background-color: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}

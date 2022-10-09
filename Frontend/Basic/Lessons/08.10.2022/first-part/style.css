@@ -1,0 +1,92 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+#container {
+    height: 1700px;
+    background-color: gray;
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+    /* align-items: flex-start; */
+    flex-wrap: wrap;
+    /* flex-flow: Объеденяет flex-direction и flex-wrap в одно свойство*/
+    /* flex-flow: row wrap; */
+    /* align-content: Работает только если установлен wrap и у контейнера обязастельно должна быть высота */
+    align-content: stretch;
+}
+
+.block {
+    border: 1px solid black;
+    margin: 20px;
+}
+
+#block1 {
+    width: 150px;
+    background-color: blue;
+    color: antiquewhite;
+}
+
+#block2 {
+    width: 250px;
+    background-color: rebeccapurple;
+    color: antiquewhite;
+}
+
+#block3 {
+    width: 120px;
+    background-color: green;
+    color: antiquewhite;
+}
+
+#block4 {
+    width: 190px;
+    background-color: coral;
+}
+
+#block5 {
+    width: 150px;
+    background-color: blue;
+    color: antiquewhite;
+}
+
+#block6 {
+    width: 250px;
+    background-color: rebeccapurple;
+    color: antiquewhite;
+}
+
+#block7 {
+    width: 120px;
+    background-color: green;
+    color: antiquewhite;
+}
+
+#block8 {
+    width: 190px;
+    background-color: coral;
+}
+
+#block9 {
+    width: 150px;
+    background-color: blue;
+    color: antiquewhite;
+}
+
+#block10 {
+    width: 250px;
+    background-color: rebeccapurple;
+    color: antiquewhite;
+}
+
+#block11 {
+    width: 120px;
+    background-color: green;
+    color: antiquewhite;
+}
+
+#block12 {
+    width: 190px;
+    background-color: coral;
+}
