@@ -4,6 +4,7 @@
 
 #### Basic
 
+- [08.10.2022](https://github.com/mi444k/Tel-Ran/tree/main/Frontend/Basic/HomeWorks/08.10.2022)
 - [29.09.2022](https://mi444k.github.io/Tel-Ran/Frontend/Basic/HomeWorks/29.09.2022/about.html)
 
 #### Task
