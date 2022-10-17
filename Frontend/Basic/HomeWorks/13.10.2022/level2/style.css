@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all var(--animation-duration) linear;
 }
 
 body {
@@ -44,7 +45,6 @@ form textarea {
   margin: 5px 0px;
   border: 1px solid #ccc;
   border-radius: 2px;
-  transition: all var(--animation-duration) linear;
 }
 
 form input::placeholder,
