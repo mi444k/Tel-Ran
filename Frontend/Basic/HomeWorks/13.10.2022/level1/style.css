@@ -1,0 +1,82 @@
+:root {
+  --input-text: #000;
+  --input-border: 1px solid #ccc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+}
+
+asterisk::before {
+  color: red;
+  content: "*";
+}
+
+form {
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+  color: var(--input-text);
+  padding: 20px;
+}
+
+form input::placeholder {
+  color: var(--input-text);
+}
+
+fieldset {
+  border: 1px solid #aaa;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+fieldset input,
+fieldset select,
+fieldset textarea {
+  border: 1px solid #aaa;
+
+  color: var(--input-text);
+  margin-top: 10px;
+  min-width: 275px;
+}
+
+.checkbox_list_item label {
+  padding: 5px;
+}
+.checkbox_list_item input {
+  min-width: 20px;
+}
+
+form label {
+  display: inline-block;
+  vertical-align: top;
+  width: 130px;
+}
+
+legend {
+  margin-left: 15px;
+  padding: 0 5px;
+}
+
+aside {
+  color: red;
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+
+aside a {
+  color: red;
+  padding: 0px 3px;
+}

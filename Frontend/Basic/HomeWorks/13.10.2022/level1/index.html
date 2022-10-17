@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside>
+      👉 Sources:
+      <a
+        href="https://github.com/mi444k/Tel-Ran/tree/main/Frontend/Basic/HomeWorks/13.10.2022/level1/index.html"
+        target="_blank"
+        >HTML</a
+      >
+      |
+      <a
+        href="https://github.com/mi444k/Tel-Ran/tree/main/Frontend/Basic/HomeWorks/13.10.2022/level1/style.css"
+        target="_blank"
+        >CSS</a
+      >
+    </aside>
+    <main>
+      <form action="#" method="post">
+        <h1>Форма заявки на работу в зоопарке</h1>
+        <i>
+          Пожалуйста заполните форму. обязательные поля отмечаны <asterisk />
+        </i>
+        <fieldset>
+          <legend>Контактная информация</legend>
+          <div>
+            <label for="name">Имя <asterisk /></label>
+            <input type="text" name="name" />
+          </div>
+          <div>
+            <label for="phone">Телефон</label>
+            <input type="text" name="phone" />
+          </div>
+          <div>
+            <label for="emain">E-Mail <asterisk /></label>
+            <input type="emain" name="emain" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Персональная информация</legend>
+          <div>
+            <label for="age">Возраст <asterisk /></label>
+            <input type="text" name="age" />
+          </div>
+          <div>
+            <label for="sex">Пол</label>
+            <select name="sex">
+              <option disabled selected value>* Выбирете ваш пол *</option>
+              <option>Мужской</option>
+              <option>Женский</option>
+              <option>Ламинат</option>
+              <option>Паркет</option>
+            </select>
+          </div>
+          <div>
+            <label for="characteristics">Перечислите личные качетсва</label>
+            <textarea name="characteristics" cols="30" rows="5"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset class="checkbox_list_fieldset">
+          <legend>Выберете ваших любимых животных</legend>
+          <div class="checkbox_list_item">
+            <label>
+              <input type="checkbox" name="name" />
+              Зебра
+            </label>
+            <label>
+              <input type="checkbox" name="name" />
+              Слон
+            </label>
+            <label>
+              <input type="checkbox" name="name" />
+              Кошка
+            </label>
+            <label>
+              <input type="checkbox" name="name" />
+              Антилопа
+            </label>
+            <label>
+              <input type="checkbox" name="name" />
+              Анаконда
+            </label>
+            <label>
+              <input type="checkbox" name="name" />
+              Голубь
+            </label>
+            <label>
+              <input type="checkbox" name="name" />
+              Человек
+            </label>
+            <label>
+              <input type="checkbox" name="name" />
+              Краб
+            </label>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

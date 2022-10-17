@@ -16,8 +16,6 @@ body {
   flex-wrap: wrap;
   width: 100vw;
   height: 100vh;
-  justify-content: center;
-  vertical-align: middle;
 }
 
 main {
@@ -78,9 +76,9 @@ form button[type="submit"]:hover {
 
 aside {
   color: red;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
+  display: block;
+  width: 100%;
+  text-align: right;
 }
 
 aside a {
