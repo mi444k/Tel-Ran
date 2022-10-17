@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.3s linear;
 }
 
 body {
@@ -67,6 +68,26 @@ form label {
 legend {
   margin-left: 15px;
   padding: 0 5px;
+}
+
+form .buttonwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+}
+
+form button[type="submit"] {
+  padding: 5px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(39, 124, 158);
+  color: #fff;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: rgb(17, 86, 114);
 }
 
 aside {

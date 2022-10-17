@@ -1,6 +1,7 @@
 :root {
   --input-text: #888;
-  --input-border: 1px solid #ccc;
+  --hovered-color: rgb(100, 193, 255);
+  --animation-duration: 0.3s;
 }
 
 * {
@@ -29,10 +30,6 @@ form {
   flex-direction: column;
 }
 
-form input::placeholder {
-  color: var(--input-text);
-}
-
 form p {
   margin-top: 20px;
 }
@@ -41,16 +38,40 @@ form input,
 form select,
 form textarea {
   color: var(--input-text);
-}
-
-form input,
-form select,
-form textarea {
+  background-color: rgba(220, 220, 220, 0.1);
   height: 30;
   padding: 7px 5px;
   margin: 5px 0px;
-  border: var(--input-border);
+  border: 1px solid #ccc;
   border-radius: 2px;
+  transition: all var(--animation-duration) linear;
+}
+
+form input::placeholder,
+form select::placeholder,
+form textarea::placeholder {
+  transition: all var(--animation-duration) linear;
+  color: var(--input-text);
+}
+
+form input:hover,
+form select:hover,
+form textarea:hover {
+  border: 1px solid var(--hovered-color);
+  background-color: transparent;
+  color: var(--hovered-color);
+}
+
+form input:hover::placeholder,
+form select:hover::placeholder,
+form textarea:hover::placeholder {
+  color: var(--hovered-color);
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: none;
 }
 
 form .buttonwrapper {
