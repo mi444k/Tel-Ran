@@ -1,0 +1,89 @@
+:root {
+  --input-text: #888;
+  --input-border: 1px solid #ccc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Geneva, sans-serif;
+  font-weight: 100;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+main {
+  width: 100%;
+}
+
+form {
+  color: var(--input-text);
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+}
+
+form input::placeholder {
+  color: var(--input-text);
+}
+
+form p {
+  margin-top: 20px;
+}
+
+form input,
+form select,
+form textarea {
+  color: var(--input-text);
+}
+
+form input,
+form select,
+form textarea {
+  height: 30;
+  padding: 7px 5px;
+  margin: 5px 0px;
+  border: var(--input-border);
+  border-radius: 2px;
+}
+
+form .buttonwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+form button[type="submit"] {
+  width: 250px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(39, 124, 158);
+  color: #fff;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: rgb(17, 86, 114);
+}
+
+aside {
+  color: red;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+aside a {
+  color: red;
+  padding: 0px 3px;
+}

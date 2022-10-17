@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <aside>
+        👉 Sources:
+        <a
+          href="https://github.com/mi444k/Tel-Ran/tree/main/Frontend/Basic/HomeWorks/13.10.2022/level2/index.html"
+          target="_blank"
+          >HTML</a
+        >
+        |
+        <a
+          href="https://github.com/mi444k/Tel-Ran/tree/main/Frontend/Basic/HomeWorks/13.10.2022/level2/style.css"
+          target="_blank"
+          >CSS</a
+        >
+      </aside>
+      <form action="#" method="post">
+        <h1>Workplace Complaint Form</h1>
+
+        <p>Your name</p>
+        <input type="text" name="firstname" placeholder="First" />
+        <input type="text" name="lastname" placeholder="Last" />
+
+        <p>Your email</p>
+        <input type="email" name="email" />
+
+        <p>Dayte of complaint</p>
+        <input type="date" name="complaintdate" placeholder="mm/dd/yyy" />
+
+        <p>Your department</p>
+        <select name="department">
+          <option disabled selected value>* Please select *</option>
+          <option>IT</option>
+          <option>Finance</option>
+          <option>Managment</option>
+          <option>Cleaning</option>
+        </select>
+
+        <p>Office manager name</p>
+        <input type="text" />
+
+        <p>The person(s) involved in this complaint are</p>
+        <textarea name="involvedpersons" cols="30" rows="5"></textarea>
+
+        <p>
+          Note all relevant dates, lcaes, vents, etc. pertaining to the
+          complaint.
+        </p>
+        <textarea name="relevantevents" cols="30" rows="5"></textarea>
+
+        <p>Signature</p>
+        <textarea name="signature" cols="30" rows="5"></textarea>
+
+        <div class="buttonwrapper">
+          <button type="submit"><h2>Send</h2></button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
