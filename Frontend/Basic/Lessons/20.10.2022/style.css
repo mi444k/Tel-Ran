@@ -1,42 +1,103 @@
+:root {
+  --apricot: #fed5baff;
+  --desert-sand: #f1cab2ff;
+  --middle-yellow-red: #efb57cff;
+  --bronze: #ca8646ff;
+  --rocket-metallic: #806d66ff;
+  --liver: #5e4b4bff;
+  --umber: #5d4f44ff;
+  --raisin-black: #302c35ff;
+  --rich-black-fogra-29: #030f16ff;
+  --rich-black-fogra-39: #020303ff;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  padding: 30px;
+html,
+body,
+.wrapper {
+  height: 100%;
 }
 
-p {
-  font-size: 20px;
+.wrapper {
+  display: flex;
 }
 
-a {
-  text-decoration: none;
-  color: red;
+.left,
+.right {
+  flex: 1;
 }
 
-a:visited {
-  color: brown;
+.right {
+  /* background-image: url("https://images.unsplash.com/photo-1666122093052-82dda8cff1be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"); */
+  background-image: url("./images/main-right-1.jpeg");
+  background-position: center;
+  background-size: cover;
 }
 
-a:hover {
-  color: blue;
-  text-decoration: underline;
+.right img,
+.right figure {
+  height: 100%;
+  width: 100%;
 }
 
-.textinput {
-  border: 1px solid black;
-  width: 300px;
-  height: 100px;
-  font-size: 18px;
-  padding: 0 10px;
+.right figure {
+  line-height: 0;
 }
 
-.textinput:active {
-  background-color: blue;
+.right img {
+  object-fit: cover;
+  object-position: right;
 }
 
-.textinput:focus {
-  background-color: bisque;
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6e6cb;
+}
+
+.left h1 {
+  color: #eddbc0;
+}
+
+.left form {
+  text-align: center;
+  background-color: #bf9270;
+  padding: 3rem 1rem;
+  border-radius: 8px;
+}
+
+.left input {
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: #eddbc0;
+}
+
+.left input::placeholder {
+  color: #bf9270;
+}
+
+.left input:focus {
+  outline: none;
+}
+
+.left .row {
+  margin: 1rem 0;
+}
+
+.left button {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  background: #86543999;
+  border: none;
+  border-radius: 4px;
+  color: #eddbc0;
+  cursor: pointer;
 }
