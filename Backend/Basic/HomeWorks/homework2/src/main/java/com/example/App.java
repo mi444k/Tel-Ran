@@ -2,10 +2,8 @@ package com.example;
 
 import java.util.*;
 
-public class App 
-{
-    public static String dischargeToDec( String value, int discharge ) 
-    {
+public class App {
+    public static String dischargeToDec(String value, int discharge) {
         Dictionary<Character, Integer> hexChars = new Hashtable<Character, Integer>();
         hexChars.put('a', 10);
         hexChars.put('b', 11);
@@ -19,15 +17,14 @@ public class App
             _value = value.substring(2, _value.length());
         }
         // if (!_value.matches("^([A-Fa-f0-9]*)$")) {
-        //     return "Value " + value + " has invalid format. HEX is expected.";
+        // return "Value " + value + " has invalid format. HEX is expected.";
         // }
         int result = 0;
         int d;
         for (int i = 0; i < _value.length(); i++) {
             try {
                 d = hexChars.get(Character.toLowerCase(_value.charAt(i)));
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 d = (int) Character.getNumericValue(_value.charAt(i));
             }
             result += (d * Math.pow(discharge, _value.length() - i - 1));
@@ -35,7 +32,7 @@ public class App
         return String.valueOf(result);
     }
 
-    public static Dictionary decomposeDec( int value ) {
+    public static Dictionary<Integer, Character> decomposeDec(int value) {
         String s = Integer.toString(value);
         Dictionary<Integer, Character> discharges = new Hashtable<Integer, Character>();
 
@@ -45,7 +42,7 @@ public class App
         return discharges;
     }
 
-    private static String decToDischarge( int value, int discharge ) {
+    private static String decToDischarge(int value, int discharge) {
         Dictionary<String, String> hexValue = new Hashtable<String, String>();
         hexValue.put("10", "A");
         hexValue.put("11", "B");
@@ -76,8 +73,7 @@ public class App
         return result;
     }
 
-    public static void main( String[] args )
-    {
+    public static void main(String[] args) {
         int task_0_hex_to_dec = 478;
         int task_1_to_digit = 200345;
         int task_2_dec_to_hex = 637;
@@ -86,7 +82,8 @@ public class App
         int task_5_dec_to_trinity = 637;
 
         // Task 0:
-        System.out.println("Task 0: HEX 0x" + task_0_hex_to_dec + " = DEC " + dischargeToDec(Integer.toString(task_0_hex_to_dec), 16));
+        System.out.println("Task 0: HEX 0x" + task_0_hex_to_dec + " = DEC "
+                + dischargeToDec(Integer.toString(task_0_hex_to_dec), 16));
 
         // Task 1:
         System.out.println("Task 1: DEC " + task_1_to_digit + " has " + decomposeDec(task_1_to_digit));
@@ -100,10 +97,12 @@ public class App
         System.out.println("Task 3: DEC " + task_3_dec_to_bin + " = BIN " + decToDischarge(task_3_dec_to_bin, 2));
 
         // Task 4:
-        System.out.println("Task 4: BIN " + task_4_bin_to_dec + " = DEC " + dischargeToDec(Integer.toString(task_4_bin_to_dec), 2));
+        System.out.println("Task 4: BIN " + task_4_bin_to_dec + " = DEC "
+                + dischargeToDec(Integer.toString(task_4_bin_to_dec), 2));
 
         // Task 5:
-        System.out.println("Task 5: DEC " + task_5_dec_to_trinity + " = TRINITY " + decToDischarge(task_5_dec_to_trinity, 3));
+        System.out.println(
+                "Task 5: DEC " + task_5_dec_to_trinity + " = TRINITY " + decToDischarge(task_5_dec_to_trinity, 3));
 
     }
 }
