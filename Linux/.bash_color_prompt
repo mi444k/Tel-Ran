@@ -1,0 +1,116 @@
+#!/bin/bash
+## Add to .bashrc
+# if [ -f ~/.bash_color_prompt ]; then
+#     . ~/.bash_color_prompt
+# fi
+##
+
+## Colors used for the prompt.
+RESET='\033[m'
+
+# Regular text color
+BLACK='\033[0;30m'
+# Bold text color
+BBLACK='\033[1;30m'
+# Background color
+BGBLACK='\033[40m'
+
+RED='\033[0;31m'
+BRED='\033[1;31m'
+BGRED='\033[41m'
+
+GREEN='\033[0;32m'
+BGREEN='\033[1;32m'
+BGGREEN='\033[1;32m'
+
+YELLOW='\033[0;33m'
+BYELLOW='\033[1;33m'
+BGYELLOW='\033[1;33m'
+
+BLUE='\033[0;34m'
+BBLUE='\033[1;34m'
+BGBLUE='\033[1;34m'
+
+MAGENTA='\033[0;35m'
+BMAGENTA='\033[1;35m'
+BGMAGENTA='\033[1;35m'
+
+CYAN='\033[0;36m'
+BCYAN='\033[1;36m'
+BGCYAN='\033[1;36m'
+
+WHITE='\033[0;37m'
+BWHITE='\033[1;37m'
+BGWHITE='\033[1;37m'
+
+OCHRE='\033[38;5;95m'
+
+BLINK="\E[5m"
+
+
+function git_info {
+    local      GOOD="◉"
+    local     AHEAD="↑"
+    local    BEHIND="↓"
+    local   CHANGED="ϟ"
+    local  DIVERGED="↕"
+    local UNTRACKED="ಠ_ಠ"
+
+
+    local git_status="$(git status 2> /dev/null)"
+    local git_branch=""
+
+    local on_branch="On branch ([^${IFS}]*)"
+    local on_commit="HEAD detached at ([^${IFS}]*)"
+    if [[ $git_status =~ $on_branch ]]; then
+        git_branch=${BASH_REMATCH[1]}
+    elif [[ $git_status =~ $on_commit ]]; then
+        git_branch=${BASH_REMATCH[1]}
+    fi
+
+    local git_color=$OCHRE
+    local git_icon=""
+    if [[ $git_status =~ "working tree clean" ]]; then
+        git_color=$GREEN
+        git_icon=":$GOOD$GREEN"
+    elif [[ $git_status =~ "Your branch is behind" ]]; then
+        git_color=$BYELLOW
+        git_icon=":$BEHIND$BYELLOW"
+    elif [[ $git_status =~ "Your branch is ahead of" ]]; then
+        git_color=$BYELLOW
+        git_icon=":$AHEAD$BYELLOW"
+    elif [[ $git_status =~ "have diverged" ]]; then
+        git_color=$CYAN
+        git_icon=":$DIVERGED$CYAN"
+    elif [[ $git_status =~ "no changes added to commit" ]]; then
+        git_color=$RED
+        git_icon=":$UNTRACKED$RED"
+    fi
+
+    if [ ! -z "$git_branch" ]; then
+        echo -e " $git_color($git_branch$git_icon)"
+    else
+        echo -e ""
+    fi
+}
+
+
+function color_prompt {
+    local __start="$(printf "\e")"
+    local __time="$GREEN[$WHITE\A$GREEN]"
+    # local __time=$(echo -e "$GREEN[$WHITE\$(date +"%H")$BLINK:$WHITE$(date +"%M")$GREEN]")
+    local __user="$RED\u"
+    local __host="$GREEN\h"
+    # local __host="$GREEN""acc"
+    local __cur_location="$CYAN\w"
+
+    local __end="\n$__time$RESET \$ "
+    if [ $(id -u) -eq 0 ];
+    then
+        __end="\n$__time$RESET # "
+    fi
+
+    export PS1="$__start$__user$YELLOW@$__host$RESET:$__cur_location\$(git_info)$__end"
+}
+
+color_prompt
