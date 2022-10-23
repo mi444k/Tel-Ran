@@ -1,5 +1,4 @@
 # Tel-Ran IT School Student
-
 #### Group: 37/38ma (10.09.2022)
 
 ---
