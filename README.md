@@ -1,4 +1,5 @@
 # Tel-Ran IT School Student
+
 #### Group: 37/38ma (10.09.2022)
 
 ---
@@ -24,6 +25,7 @@
 #### Cheat sheet
 
 - [Linux / GIT](https://github.com/mi444k/Tel-Ran/tree/main/Linux/cheatsheet.md)
+- [Linux Color Promt with Git status](https://github.com/mi444k/Tel-Ran/tree/main/Linux/.bash_color_prompt)
 
 ---
 

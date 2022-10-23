@@ -56,7 +56,6 @@ function git_info {
     local  DIVERGED="↕"
     local UNTRACKED="ಠ_ಠ"
 
-
     local git_status="$(git status 2> /dev/null)"
     local git_branch=""
 
