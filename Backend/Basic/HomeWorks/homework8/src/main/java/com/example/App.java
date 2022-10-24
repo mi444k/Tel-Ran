@@ -17,21 +17,21 @@ public class App {
     }
 
     String shake() {
-        return "вспененное";
+        return "ыспененное";
     }
 
     String selectTea() {
-        return "выбор чайного пакетика";
+        return "чайный пакетик";
     }
 
     String getCoffee(int button) {
         String process;
         switch (button) {
-            case 1 -> process = "Приготовление эспрессо: " + espresso();
-            case 2 -> process = "Приготовление американо: " + espresso() + " + " + water();
-            case 3 -> process = "Приготовление капучино: " + espresso() + " + " + milk();
-            case 4 -> process = "Приготовление латте: " + espresso() + " + " + shake() + " " + milk();
-            case 5 -> process = "Приготовление чая: " + selectTea() + " + " + water();
+            case 1 -> process = "Приготовление Espresso: " + espresso();
+            case 2 -> process = "Приготовление Americano: " + espresso() + " + " + water();
+            case 3 -> process = "Приготовление Capuchino: " + espresso() + " + " + milk();
+            case 4 -> process = "Приготовление Latte: " + espresso() + " + " + shake() + " " + milk();
+            case 5 -> process = "Приготовление Tea: " + selectTea() + " + " + water();
             default -> process = "";
         }
         return process;
