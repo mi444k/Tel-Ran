@@ -17,7 +17,7 @@ public class App {
     }
 
     String shake() {
-        return "ыспененное";
+        return "вспененное";
     }
 
     String selectTea() {
