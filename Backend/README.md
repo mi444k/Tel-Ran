@@ -4,7 +4,7 @@
 
 #### Basic
 
-- [26.10.2022](https://github.com/mi444k/Tel-Ran/blob/main/Backend/Basic/HomeWorks/homework10/src/main/java/com/example/App.java)
+- [26.10.2022](https://github.com/mi444k/Tel-Ran/blob/main/Backend/Basic/HomeWorks/homework10/src/main/java/App.java)
 - [24.10.2022](https://github.com/mi444k/Tel-Ran/blob/main/Backend/Basic/HomeWorks/homework9/src/main/java/com/example/App.java)
 - [20.10.2022](https://github.com/mi444k/Tel-Ran/blob/main/Backend/Basic/HomeWorks/homework8/src/main/java/com/example/App.java)
 - [18.10.2022](https://github.com/mi444k/Tel-Ran/blob/main/Backend/Basic/HomeWorks/homework7/src/main/java/com/example/App.java)
