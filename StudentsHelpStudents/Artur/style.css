@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.project_content {
+  padding: 124px 64px;
+  display: flex;
+  justify-content: space-around;
+  background-color: bisque;
+}
+
+.cover_picture {
+  background-image: url("https://avatars.mds.yandex.net/get-altay/216588/2a0000015b862ca2f8c3b7aca67ffd00d825/XXL");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: flex-end;
+
+  height: auto;
+  width: calc(30vw - 32px);
+  min-width: 200px;
+  min-height: 300px;
+  background-color: aquamarine;
+}
+
+.cover_picture:nth-child(1) {
+  background-color: aqua;
+}
+
+.cover_picture:hove:nth-child(1) {
+  background-color: red;
+}
+
+.card_content {
+  padding: 15px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.card_content:hover {
+  opacity: 1;
+}
+
+p,
+h3 {
+  color: aliceblue;
+}
