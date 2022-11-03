@@ -21,9 +21,9 @@ body {
   position: absolute;
   width: 350px;
   height: 350px;
-  transform: rotate(25deg);
-  bottom: -25px;
-  z-index: 20;
+  transform: rotate(25deg) scaleX(-100%);
+  bottom: 50px;
+  left: 130px;
 }
 
 .wisky {
@@ -61,8 +61,8 @@ body {
 }
 .planet_3 {
   position: absolute;
-  left: 175px;
-  bottom: 30px;
+  left: 30px;
+  bottom: 10px;
 }
 
 .asteroid {
