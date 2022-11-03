@@ -22,7 +22,8 @@ body {
   width: 350px;
   height: 350px;
   transform: rotate(25deg);
-  bottom: 0;
+  bottom: -25px;
+  z-index: 20;
 }
 
 .wisky {
@@ -48,19 +49,34 @@ body {
   width: auto;
 }
 
-.planets {
+.planet_1 {
   position: absolute;
-  right: 50px;
-  height: 100%;
-  opacity: 0.9;
+  left: 230px;
+  top: 90px;
+}
+.planet_2 {
+  position: absolute;
+  left: 300px;
+  bottom: 200px;
+}
+.planet_3 {
+  position: absolute;
+  left: 175px;
+  bottom: 30px;
+}
+
+.asteroid {
+  position: absolute;
+  right: 100px;
+  top: 100px;
 }
 
 .ufo {
   position: absolute;
-  width: 150px;
+  width: 100px;
   height: auto;
-  left: 150px;
-  top: 100px;
+  left: 110px;
+  top: 80px;
 }
 
 .audio {
