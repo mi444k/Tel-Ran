@@ -35,15 +35,12 @@
 
 ## GIT
 
-1. **Beautiful GIT LOG:**
+**Beautiful GIT LOG:**
 
-   ```bash
-   git config --global alias.plog "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-   ```
-
-2. ```bash
-   git plog
-   ```
+```bash
+1. git config --global alias.plog "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+2. git plog
+```
 
 ---
 
