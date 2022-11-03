@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.8rem;
+  background-color: antiquewhite;
+  color: indianred;
+  padding-bottom: 50px;
+}
+
+article {
+  position: relative;
+  margin: 10px auto;
+  width: 600px;
+  border: 1px solid indianred;
+  border-radius: 15px 15px 0 0;
+  padding: 25px;
+}
+
+article p {
+  padding-top: 25px;
+}
+
+footer {
+  color: antiquewhite;
+  background-color: indianred;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+footer a,
+footer a:visited {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer h4 {
+  position: relative;
+  margin: 15px auto;
+}
