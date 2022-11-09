@@ -7,10 +7,11 @@
 #### Roadmap
 
 - [x] Start learning in Tel-Ran IT School
-- [ ] Done [Basic Linux](https://github.com/mi444k/Tel-Ran/tree/main/Linux) course
-- [ ] Done [Basic Backend](https://github.com/mi444k/Tel-Ran/tree/main/Backend) course
-- [ ] Done [Basic Frontedn](https://github.com/mi444k/Tel-Ran/tree/main/Frontend) course
-- [ ] Choose specialization
+- [x] Done [Basic Linux](https://github.com/mi444k/Tel-Ran/tree/main/Linux) course
+- [x] Done [Basic Backend](https://github.com/mi444k/Tel-Ran/tree/main/Backend) course
+- [x] Done [Basic Frontedn](https://github.com/mi444k/Tel-Ran/tree/main/Frontend) course
+- [x] Choose specialization
+- [ ] Specialization
 
 ---
 
