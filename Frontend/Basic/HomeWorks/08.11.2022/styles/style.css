@@ -28,6 +28,9 @@ body {
   padding: 10px;
   height: 50px;
   width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
 }
 
 .nav-menu {
