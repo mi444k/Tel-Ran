@@ -11,7 +11,7 @@
 - [x] Done [Basic Backend](https://github.com/mi444k/Tel-Ran/tree/main/Backend) course
 - [x] Done [Basic Frontedn](https://github.com/mi444k/Tel-Ran/tree/main/Frontend) course
 - [x] Choose specialization
-- [ ] Specialization
+- [ ] Specialization [Frontend](https://github.com/mi444k/Tel-Ran/tree/main/FESpec). Group Front-end_37-38m
 
 ---
 
