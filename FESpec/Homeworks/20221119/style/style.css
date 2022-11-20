@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  border: 1px solid black;
+}
+
+table td,
+table th {
+  border: 1px dotted black;
+  padding: 5px 10px;
+  margin: 0;
+}
