@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.result {
+  font-size: 2rem;
+  width: 80px;
+  text-align: center;
+}

@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carusel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100%;
+  background-color: bisque;
+  padding: 20px 0;
+}
+
+.thumbs {
+  min-width: 100px;
+  height: 100px;
+  border: 5px solid white;
+  display: flex;
+  align-self: center;
+  cursor: pointer;
+  filter: grayscale();
+  transition: filter 0.5s;
+}
+
+.thumbs:hover {
+  filter: none;
+}
+
+.bigimage {
+  width: 100vw;
+  height: calc(100vw - 100px);
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  transition: background 1s;
+  background-image: url('https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bigimage image {
+  transition: all 0.5s;
+}
