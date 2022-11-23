@@ -39,6 +39,7 @@
   background-image: url('https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .bigimage image {
