@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+.task1,
+.task2,
+.task3,
+.task4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.task1,
+.task3 {
+  background-color: antiquewhite;
+}
+
+.task2,
+.task4 {
+  background-color: burlywood;
+}
+
+h2 {
+  width: 100vw;
+  text-align: center;
+}
+
+.task2 li {
+  display: inline-flex;
+}
+
+.filminfo {
+  transition: display 0.5s;
+  display: none;
+}
+
+.t4_p {
+  font-size: 130px;
+  color: white;
+  background-color: brown;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  text-align: center;
+  border-radius: 30px;
+  opacity: 0%;
+}
