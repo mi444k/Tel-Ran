@@ -1,6 +1,8 @@
 # Tel-Ran IT School Student
 
-#### Group: 37/38ma (10.09.2022)
+#### Group: 37/38m (10.09.2022)
+
+#### Change group to 40-41m (01.12.2022)
 
 ---
 
@@ -11,7 +13,8 @@
 - [x] Done [Basic Backend](https://github.com/mi444k/Tel-Ran/tree/main/Backend) course
 - [x] Done [Basic Frontedn](https://github.com/mi444k/Tel-Ran/tree/main/Frontend) course
 - [x] Choose specialization
-- [ ] Specialization [Frontend](https://github.com/mi444k/Tel-Ran/tree/main/FESpec). Group Front-end_37-38m
+- [x] Specialization [Frontend](https://github.com/mi444k/Tel-Ran/tree/main/FESpec). Group Front-end_37-38m
+- [ ] Specialization [Frontend](https://github.com/mi444k/Tel-Ran/tree/main/FESpec). Change group to 40-41m (01.12.2022)
 
 ---
 
