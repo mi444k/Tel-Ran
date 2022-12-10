@@ -11,3 +11,4 @@
 - [19.11.2022](https://github.com/mi444k/Tel-Ran/tree/main/FESpec/Homeworks/20221119)
 - [21.11.2022](https://github.com/mi444k/Tel-Ran/tree/main/FESpec/Homeworks/20221121)
 - [23.11.2022](https://github.com/mi444k/Tel-Ran/tree/main/FESpec/Homeworks/20221122)
+- [09.12.2022](https://github.com/mi444k/Tel-Ran/tree/main/FESpec/Homeworks/20221209)
