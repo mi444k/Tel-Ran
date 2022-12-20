@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.frame {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cards {
+  left: 0;
+  display: grid;
+  grid-auto-flow: column;
+  position: absolute;
+  transition: left 0.5s ease;
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  width: 500px;
+  height: 500px;
+  z-index: 10;
+}
+
+.leftSide, .rightSide {
+  position: absolute;
+  width: 250px;
+  height: 500px;
+  z-index: 20;
+}
+
+.leftSide {
+  left: 0px;
+}
+.rightSide {
+  left: 250px;
+}
+
+.leftSide:hover {
+  background: rgb(9,52,121);
+  background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 70%);
+}
+
+.rightSide:hover {
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,0) 30%, rgba(0,0,0,0.5) 100%);
+}
