@@ -10,10 +10,8 @@ const images = [
   "https://amiel.club/uploads/posts/2022-03/1647566828_1-amiel-club-p-krasivie-kartinki-peizazh-1.jpg"
 ];
 
-const frame = document.createElement("div");
-const cards = document.createElement("div");
-frame.classList.add("frame");
-cards.classList.add("cards");
+const frame = document.querySelector(".frame");
+const cards = document.querySelector(".cards");
 
 for (let i = 0; i < images.length; i++) {
   const card = document.createElement("div");
@@ -22,15 +20,15 @@ for (let i = 0; i < images.length; i++) {
   cards.append(card);
 }
 
-frame.append(cards);
-root.append(frame);
-
-function slide(left = true) {
-  if (
-    (left === true && sliderIndex < images.length - 1) ||
-    (left === false && sliderIndex > 0)
+function slide(to) {
+  if (typeof to === "number") {
+    sliderIndex = to;
+    cards.style.left = `-${sliderIndex * 500}px`;
+  } else if (
+    (to === "right" && sliderIndex < images.length - 1) ||
+    (to === "left" && sliderIndex > 0)
   ) {
-    sliderIndex += left ? 1 : -1;
+    sliderIndex += to === "right" ? 1 : -1;
     cards.style.left = `-${sliderIndex * 500}px`;
   }
 }
@@ -39,9 +37,28 @@ const leftSide = document.querySelector(".leftSide");
 const rightSide = document.querySelector(".rightSide");
 
 leftSide.addEventListener("click", evt => {
-  slide(false);
+  slide("left");
 });
 
 rightSide.addEventListener("click", evt => {
-  slide(true);
+  slide("right");
 });
+
+function createPegginator() {
+  const rounds = document.getElementsByClassName("rounds")[0];
+  for (let i = 0; i < images.length; i++) {
+    let btn = document.createElement("button");
+    btn.classList.add(`bnt${i}`);
+    btn.addEventListener("click", evt => {
+      allButtons = btn.parentElement.children;
+      for (let j = 0; j < allButtons.length; j++) {
+        allButtons[j].classList.remove("active");
+      }
+      evt.target.classList.add("active");
+      slide(i);
+    });
+    rounds.appendChild(btn);
+  }
+}
+
+createPegginator();
